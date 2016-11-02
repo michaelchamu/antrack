@@ -1,0 +1,43 @@
+{
+  "name": "skh5bp",
+  "version": "1.0.0",
+  "description": "A bootstrap HTML5 boilerplate template",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stalinkay/h5bp.git"
+  },
+  "keywords": [
+    "stalin",
+    "kay",
+    "html5",
+    "boilerplate",
+    "bootstrap",
+    "gulp",
+    "postcss",
+    "cssnano",
+    "precss",
+    "autoprefixer"
+  ],
+  "author": "Stalin Kay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stalinkay/h5bp/issues"
+  },
+  "homepage": "https://github.com/stalinkay/h5bp#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-image-resize": "^0.7.1",
+    "gulp-less": "^3.0.5",
+    "gulp-postcss": "^6.1.0",
+    "gulp-responsive": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "precss": "^1.4.0"
+  }
+}

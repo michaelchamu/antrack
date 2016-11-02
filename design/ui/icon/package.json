@@ -1,0 +1,78 @@
+{
+  "name": "skh5bp",
+  "version": "1.0.0",
+  "description": "A bootstrap HTML5 boilerplate template",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stalinkay/h5bp.git"
+  },
+  "keywords": [
+    "stalin",
+    "kay",
+    "html5",
+    "boilerplate",
+    "bootstrap",
+    "gulp",
+    "postcss",
+    "cssnano",
+    "precss",
+    "autoprefixer"
+  ],
+  "author": "Stalin Kay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stalinkay/h5bp/issues"
+  },
+  "homepage": "https://github.com/stalinkay/h5bp#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "bootstrap": "^4.0.0-alpha.2",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-base64": "^0.1.3",
+    "gulp-base64-webfont-css": "0.0.1",
+    "gulp-cdnizer": "^1.1.6",
+    "gulp-cond": "^1.0.0",
+    "gulp-css-base64": "^1.3.4",
+    "gulp-cssfont64": "0.0.1",
+    "gulp-documentation": "^2.2.0",
+    "gulp-favicons": "^2.2.6",
+    "gulp-filter": "^4.0.0",
+    "gulp-fontgen": "^0.1.6",
+    "gulp-ga": "0.0.7",
+    "gulp-google-fonts-base64-css": "^1.0.4",
+    "gulp-html-autoprefixer": "0.0.1",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-iconfont": "^6.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-if-else": "^1.0.3",
+    "gulp-img64": "0.0.6",
+    "gulp-inline": "^0.1.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-inline-image-html": "^0.2.1",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-inline": "^0.2.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-responsive": "^2.2.0",
+    "gulp-simplefont64": "0.0.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.8",
+    "gulp-util": "^3.0.7",
+    "gulp-webfont": "0.0.1-2",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^1.12.2",
+    "path": "^0.12.7",
+    "precss": "^1.4.0"
+  },
+  "dependencies": {
+    "inline-css": "^2.2.2"
+  }
+}

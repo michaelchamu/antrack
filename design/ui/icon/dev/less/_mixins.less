@@ -1,0 +1,129 @@
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}
+
+.box-shadow (@string) {
+  box-shadow: @string;
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.box-sizing (@type: border-box) {
+  box-sizing: @type;
+}
+
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  background-clip: padding-box;
+}
+
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  background-clip: padding-box;
+}
+
+.opacity (@opacity: 0.5) {
+  opacity: @opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+}
+
+.angled-gradient (@degree:180deg, @startColor: #eee, @endColor: white) {
+  background: linear-gradient(@degree, r@startColor, @endColor); /* Standard syntax */
+}
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+  -ms-animation: @name @duration @delay @ease;
+}
+
+.transition (@transition) {
+  transition: @transition;
+}
+
+.transform(@string) {
+  transform: @string;
+}
+
+.scale (@factor) {
+  transform: scale(@factor);
+}
+
+.rotate (@deg) {
+  transform: rotate(@deg);
+}
+
+.skew (@deg, @deg2) {
+  transform: skew(@deg, @deg2);
+}
+
+.translate (@x, @y:0) {
+  transform: translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+  transform: translate3d(@x, @y, @z);
+}
+
+.perspective (@value: 1000) {
+  perspective: @value;
+}
+
+.transform-origin (@x:center, @y:center) {
+  transform-origin: @x @y;
+}
+
+.background-image-cover(@url) {
+  background-image: url(@url);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vertical-align(@position: relative) {
+
+  //position: @position;
+  //top: 50%;
+  //right: 50%;
+  //
+  //-webkit-transform: translateY(-50%);
+  //-ms-transform: translateY(-50%);
+  //transform: translateY(-50%);
+
+
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: @position;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.vertical-align-parent-preserve-3d() {
+  transform-style: preserve-3d;
+}
+
+.block() {
+  display: block;
+}
+
+.float-left() {
+  float: left;
+}
+
+.float-right() {
+  float: right;
+}

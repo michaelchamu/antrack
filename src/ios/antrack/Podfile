@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'antrack' do
+pod 'Google/CloudMessaging'
+pod 'Eureka', '~> 1.6'
+
+#pod 'Siesta', '>=1.0-beta.6'
+#pod 'SwiftHTTP', '~> 1.0.4'
+#pod 'RealmSwift'
+end
+
+target 'antrackTests' do
+
+end
+
+target 'antrackUITests' do
+
+end
+

@@ -1,0 +1,55 @@
+{
+  "name": "antrack",
+  "version": "0.0.1",
+  "description": "Animal Tracking API implemintation",
+  "repository": {
+    "type": "git",
+    "url": "ssh://venema@196.216.167.206:4576/antrack"
+  },
+  "scripts": {
+    "start": "coffee server.coffee"
+  },
+  "author": "EMD811S-",
+  "contributors": [
+    {
+      "name": "Michael Bosomefi Chamunorwa",
+      "email": "chamunorwamichael@gmail.com"
+    },
+    {
+      "name": "Aubrey Goliath",
+      "email": "aubrey.goliath@gmail.com"
+    },
+    {
+      "name": "Alexander Kremer",
+      "email": "alexander.kremer@student.htw-berlin.de"
+    },
+    {
+      "name": "José G. Quenum",
+      "email": "jquenum@nust.na"
+    }
+  ],
+  "license": "ISC",
+  "keywords": [
+    "animal",
+    "location",
+    "tracking"
+  ],
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "fast-csv": "^2.0.0",
+    "http": "0.0.0",
+    "method-override": "^2.3.5",
+    "moment": "^2.13.0",
+    "morgan": "^1.7.0",
+    "node-gcm": "^0.14.0",
+    "validator": "^5.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-ssh": "^0.12.9"
+  }
+}

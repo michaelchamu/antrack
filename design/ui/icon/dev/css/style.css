@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'National';
+  font-weight: 100;
+  src: url(../fonts/nat/nat_thin-4daaaf0988646919249114eefe511012.eot);
+  src: url(../fonts/nat/nat_thin-17f0aa87e33ac16267db9aa853941884.woff) format("woff");
+}
+@font-face {
+  font-family: 'National';
+  font-weight: 200;
+  src: url(../fonts/nat/nat_light-65f32ddaba76a63fd67bd0fd58c12652.eot);
+  src: url(../fonts/nat/nat_light-a1264431d8493c839e2489b7c297910b.woff) format("woff");
+}
+@font-face {
+  font-family: 'National';
+  font-weight: normal;
+  src: url(../fonts/nat/nat_reg-512237c97bd6e3b929eebe78b3828dd9.eot);
+  src: url(../fonts/nat/nat_reg-16142d96769edb629a1839d04b4889ad.woff) format("woff");
+}
+@font-face {
+  font-family: 'National';
+  font-weight: bold;
+  src: url(../fonts/nat/nat_bold-c29e1807b55a19df3cf30789259abd97.eot);
+  src: url(../fonts/nat/nat_bold-22519c6864a0adea6cbfce515d7b602a.woff) format("woff");
+}
+/* Namcor Typograhy */
+@font-face {
+  font-family: 'Mirador';
+  font-weight: 100;
+  src: url(../fonts/mirador/Mirador-ExtraLight.otf);
+}
+@font-face {
+  font-family: 'Mirador';
+  font-weight: 200;
+  src: url(../fonts/mirador/Mirador-Light.otf);
+}
+/* Regular maps to 300 */
+/*@font-face {
+    font-family: 'Mirador';
+    font-weight: 300;
+    src: url(../fonts/mirador/Mirador-Light.otf);
+}*/
+/* Normal maps to 400 */
+@font-face {
+  font-family: 'Mirador';
+  font-weight: normal;
+  src: url(../fonts/mirador/Mirador-Regular.otf);
+}
+/* Bold maps to 700 */
+@font-face {
+  font-family: 'Mirador';
+  font-weight: bold;
+  src: url(../fonts/mirador/Mirador-Bold.otf);
+}
+/* Black maps to 900 */
+@font-face {
+  font-family: 'Mirador';
+  font-weight: 900;
+  src: url(../fonts/mirador/Mirador-Black.otf);
+}
+/* Namcor Typograhy */
+@font-face {
+  font-family: 'Anglecia';
+  font-weight: 100;
+  src: url(../fonts/anglecia/AngleciaProDisplay-ExtraLight.otf);
+}
+@font-face {
+  font-family: 'Anglecia';
+  font-weight: 200;
+  src: url(../fonts/anglecia/AngleciaProDisplay-Light.otf);
+}
+/* Regular maps to 300 */
+/*@font-face {
+    font-family: 'Anglecia';
+    font-weight: 300;
+    src: url(../fonts/anglecia/AngleciaProDisplay-Light.otf);
+}*/
+/* Normal maps to 400 */
+@font-face {
+  font-family: 'Anglecia';
+  font-weight: normal;
+  src: url(../fonts/anglecia/AngleciaProDisplay-Regular.otf);
+}
+/* Bold maps to 700 */
+@font-face {
+  font-family: 'Anglecia';
+  font-weight: bold;
+  src: url(../fonts/anglecia/AngleciaProDisplay-Bold.otf);
+}
+/* Black maps to 900 */
+@font-face {
+  font-family: 'Anglecia';
+  font-weight: 900;
+  src: url(../fonts/anglecia/AngleciaProDisplay-Black.otf);
+}
+.logo-lg {
+  width: 5em;
+}
+.logo-md {
+  width: 4em;
+}
+.logo-sm {
+  width: 3.33333333em;
+}
+html,
+body {
+  height: 100%;
+}
+body,
+input,
+textarea,
+select,
+button {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+}
+body,
+input,
+textarea,
+select,
+button {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #34895a;
+  font-family: 'Anglecia', Georgia, Garamond, "Times New Roman", Times, serif;
+  /*
+              text-transform: uppercase;
+   */
+}
+h1 {
+  color: #e2363a;
+}
+p {
+  -webkit-font-variant-ligatures: common-ligatures;
+  /* for iOS and Safari 6 */
+  font-variant-ligatures: common-ligatures;
+  /* for up-to-date browsers, including IE10 and Opera 21 */
+}
+p {
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal;
+}
+.bg-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.call-to-actions p {
+  color: #fff;
+}
+.vertical-align {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+/* 	marquee */
+.marquee {
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  position: relative;
+}
+.marquee p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 2em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.marquee p a {
+  color: #fff;
+}
+@keyframes left-one {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes left-two {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.marquee p:nth-child(1) {
+  animation: left-one 15s ease infinite;
+}
+.marquee p:nth-child(2) {
+  animation: left-two 15s ease infinite;
+}
+.carousel .caption > h2,
+.carousel .caption > p {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel .caption {
+  width: 100%;
+}
+/* Joomla Smart Search Listing */
+label.element-invisible.finder {
+  display: none;
+}
+ul.search-results.list-striped {
+  list-style: none;
+  padding-left: 0;
+}
+.breadcrumb span.divider {
+  display: none;
+}

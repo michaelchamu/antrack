@@ -1,0 +1,212 @@
+#%RAML 0.8
+title: antrack
+version: v3.0.2
+baseUri: http://antrack.com/api
+
+/sightings:
+    displayName: Sightings
+    description: Records of animal sightings comprising of keywords, location data
+    post:
+      description: Post the details of an animal sighting
+      queryParameters:
+        timestamp:
+          displayName: TIME
+          type: date
+          description: Date timestamp for when sighting was made
+          required: true
+        latitude:
+          displayName: Latitude
+          type: number
+          description: Latitude reading of a sighting
+          required: true
+        longitude:
+          displayName: Longitude
+          type: number
+          description: Longitude reading of a sighting
+          required: true
+        locationName:
+          displayName: name
+          type: string
+          description: Name of location submitted
+          required: false
+        topic:
+          displayName: Keyword
+          type: string
+          description: Keyword for the animal sighted or being searched for
+          required: true
+        registrationId:
+          displayName: User
+          type: string
+          description: Unique id to identify devices and enable Google Cloud Messaging
+          required: true
+        description:
+          displayName: Comment
+          type: string
+          description: Any extra information about a sighting
+          required: false
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                "data": {
+                  "success": "true",
+                  "result": "200"
+                  }
+                }
+        401:
+          body:
+            application/json:
+              example: |
+                {
+                  "data": {
+                    "success": false,
+                    "result": 401
+                          }
+                }
+    get:
+        description: Get a list of all posts saved in the last 24hours
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                    {
+                      "data": {
+                      "topic": "Lion",
+                      "latitude": "sighting latitude",
+                      "longitude": "sighting longitude",
+                      "description": "optional comment about sighting"
+                      },
+                      "success": true,
+                      "result": 200
+                    }
+          401:
+            body:
+              application/json:
+                example: |
+                  {
+                    "data": {
+                    "success": false,
+                    "result": 401
+                    }
+                  }
+    /:id:
+        description: Retrieve a specific sighting using the unique id
+        get:
+            responses:
+                200:
+            body:
+                application/json:
+                    example: |
+                      {
+                        "data": {
+                            "keyword": "Animal name",
+                            "latitude": "Latitude reading",
+                            "longitude": "Longitude reading",
+                            "comment": "Optional comment about the sighting"
+                            },
+                             "success": true,
+                             "result": 200
+                      }
+    /:days:
+        description: Retrieves an array of sightings for the last n-days
+        get:
+            responses:
+                200:
+                    body:
+                        application/json:
+                            example: |
+                                {
+                                    "data": {
+                                    "topic": "Lion",
+                                    "latitude": "sighting latitude",
+                                    "longitude": "sighting longitude",
+                                    "description": "optional comment about sighting"
+                                    },
+                                    "success": true,
+                                    "result": 200
+                                }
+/topics:
+    displayName: Topics
+    description: List of animals that can be observed in a park.
+    get:
+        description: Retrieve a list of all possible animals that can be used as keywords in searches
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: |
+                                {
+                                "data": {
+                                    "topics": {
+                                        “english”: ["topic1", "topic2"],
+                                         “german”: ["topic1", "topic2"]
+                                    }
+                                },
+                                "success": true,
+                                "result": 200
+                                }
+            404:
+                body:
+                    application/json:
+                        example: |
+                            {
+                            "data": {
+                                "response": "Topics could not be retrieved"
+                                },
+                            "success": false,
+                            "result": 404
+                            }
+            500:
+                body:
+                    application/json:
+                        example: |
+                            {
+                            "data": {
+                                "response": "Internal server error"
+                                },
+                            "success": false,
+                            "result": 500
+                            }
+/descriptions:
+    displayName: Description
+    description: Activity the animal was carrying out when it was spotted.
+    get:
+        description: Retrieve a list of all descriptions
+        responses:
+            200:
+                body:
+                    application/json:
+                        example: |
+                            {
+                            "data": {
+                                "description": "Herd 15+ grazing"
+                                },
+                            "success": true,
+                            "result": 200
+                            }
+
+            404:
+                body:
+                    application/json:
+                        example: |
+                            {
+                            "data": {
+                                "response": "Descriptions could not be retrieved"
+                                },
+                            "success": false,
+                            "result": 404
+                            }
+            500:
+                body:
+                    application/json:
+                        example: |
+                            {
+                            "data": {
+                                "response": "Internal server error"
+                                },
+                            "success": false,
+                            "result": 500
+                            }
